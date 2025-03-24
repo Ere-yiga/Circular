@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fa.png" type="image/x-icon"> <!-- Ensure this points to your favicon file -->
+    <title>Circular</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        canvas{
+            display: block;
+            width: 100%; /* Make canvas responsive */
+            height: 100%; /* Scale to fit the screen */
+        }
+
+        @media (max-width: 768px) {
+            canvas {
+                width: 100vw; /* Full width on smaller devices */
+                height: 100vh; /* Full height on smaller devices */
+            }
+        }
+    </style>
+</head>
+<body> 
+    <canvas id="game" width="640" height="400"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
